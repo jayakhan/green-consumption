@@ -38,18 +38,18 @@ To test the significance of interactions, we then fitted third model using all p
 
 In addition to proportional odds model, we tried fitting a multinomial model using the same steps and approach used in building proportional odds model. Even though the accuracy of both proportional odds and multinomial models were same (68%), we went with proportional odds model because we wanted to incorporate low residuals and smooth interpretation in the final model. Consequently, we went with below proportional odds model as our final model:
 
-![Alt text](22_assets/model.jpg?raw=true "Regression Equation")
+![Alt text](22_assets/model.png?raw=true "Regression Equation")
 
 ### 4. Model Assessment
 After fitting the model, we first validated the predicted probabilities for observed groups using the model. For instance, for two females with similar characteristics but different ethnicity, female with Malaysian ethnicity tend to have low probability of exhibiting high green consumption behavior than the one with non-Malaysian ethnicity. 
 
 Second, we checked the binned plot residuals against numerical variables, which are centered data for control seeking behavior. The points are all scattered randomly within the bands, except for one or two points. Since there was no trend in the residuals, linearity assumption was met.
 
-![Alt text](22_assets/assess1.jpg?raw=true "Raw Residuals")
+![Alt text](22_assets/assess1.png?raw=true "Raw Residuals")
 
 Last, we checked for multi-collinearity which showed VIF scores for all explanatory predictors below 10 (~1). Overall accuracy of the model is 68%. Area under the curve for all three levels are – low (85%), medium (74.7%), and high (57.2%).
 
-![Alt text](22_assets/roc.jpg?raw=true "Area under the curve")
+![Alt text](22_assets/roc.png?raw=true "Area under the curve")
 
 ### 5. Results
 The model shows that preference for newspaper, preference for radio, preference for social media, novelty seeking behavior, number of households, ethnicity, social influence, and interaction between social influence and newspaper and between social influence and radio are all significant with p-value less than 5%.
